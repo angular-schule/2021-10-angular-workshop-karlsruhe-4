@@ -1,7 +1,7 @@
 class Test {
 
     constructor(public antwort: number) {
-        console.log('Hello ngWorld! 🤩', this.antwort = antwort)
+        console.log('Hello ngWorld! 🤩', this.antwort)
     }
 }
 
