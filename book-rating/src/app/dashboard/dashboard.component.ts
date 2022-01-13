@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  books: string[];
+
+  constructor() {
+    this.books = [];
+  }
 
   ngOnInit(): void {
+    this.books = ['Angukar', 'AngularJS', 'jQuery'];
   }
 
 }
