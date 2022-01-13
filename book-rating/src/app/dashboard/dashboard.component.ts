@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'br-dashboard',
@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent {
 
-  books = ['Angukar', 'AngularJS', 'jQuery'];
+  books = ['Angular', 'AngularJS', 'jQuery'];
 
 }
