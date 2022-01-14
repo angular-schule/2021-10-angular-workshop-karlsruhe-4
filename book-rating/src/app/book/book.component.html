@@ -5,7 +5,11 @@
     <div class="card-title">
       <h2>
         {{ book.title }}
-        <span class="badge badge-secondary">{{ book.rating }}</span>
+        <!-- <span class="badge badge-secondary">{{ '⭐️'.repeat(book.rating > 0 ? book.rating : 0) }}</span> -->
+        <!-- <span *ngFor="let s of stars" class="badge badge-secondary">⭐️</span> -->
+        <div class="badge badge-secondary">
+          <ng-container *ngFor="let s of stars">⭐️</ng-container>
+        </div>
       </h2>
     </div>
     <p>{{ book.description }}</p>
