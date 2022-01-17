@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Book } from '../shared/book';
 
 
 @Component({
   selector: 'br-book',
   templateUrl: './book.component.html',
-  styleUrls: ['./book.component.scss']
+  styleUrls: ['./book.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BookComponent  {
 
@@ -33,6 +34,10 @@ export class BookComponent  {
 
   get stars(): undefined[] {
     return new Array(this.book?.rating);
+  }
+
+  log(): void {
+    console.log('CD', +new Date());
   }
 
 }
