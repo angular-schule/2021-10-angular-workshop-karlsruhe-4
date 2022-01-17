@@ -14,18 +14,11 @@
     </div>
     <p>{{ book.description }}</p>
 
-    <!--
-      😱 WORST PRACTICE! 😱
-
-      1. Logik im HTML
-      2. Objekte werden mutiert (verändert) VS Immutability
-      3. Seperation of Concerns verletzt
-    -->
     <button class="btn btn-secondary mr-2"
-      (click)="book.rating = book.rating - 1"> - </button>
+      (click)="doRateDown()"> - </button>
 
     <button class="btn btn-primary"
-      (click)="book.rating = book.rating + 1"> + </button>
+      (click)="doRateUp()"> + </button>
 
   </div>
 </div>

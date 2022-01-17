@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Book } from '../shared/book';
+import { BookRatingService } from '../shared/book-rating.service';
 
 @Component({
   selector: 'br-dashboard',
@@ -7,6 +8,9 @@ import { Book } from '../shared/book';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
+
+  constructor(private br: BookRatingService) {
+  }
 
   books: Book[] = [{
     isbn: '000',
