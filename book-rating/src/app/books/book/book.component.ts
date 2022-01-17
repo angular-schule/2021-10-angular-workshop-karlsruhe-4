@@ -21,12 +21,12 @@ export class BookComponent  {
 
   doRateUp() {
     this.rateUp.emit(this.book);
-    debugger
+    // debugger
   }
 
   doRateDown() {
     this.rateDown.emit(this.book);
-    debugger
+    // debugger
   }
 
   get stars(): undefined[] {
