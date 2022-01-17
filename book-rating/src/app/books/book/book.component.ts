@@ -19,11 +19,13 @@ export class BookComponent  {
   @Output()
   rateDown = new EventEmitter<Book>();
 
+  /* istanbul ignore next */
   doRateUp() {
     this.rateUp.emit(this.book);
     // debugger
   }
 
+  /* istanbul ignore next */
   doRateDown() {
     this.rateDown.emit(this.book);
     // debugger
