@@ -16,7 +16,7 @@ export class CreateBookComponent  {
 
   isInvalid(path: string): boolean {
     const control = this.bookForm.get(path);
-    return !!control && control.invalid && control.touched;
+    return control ? control.invalid && control.touched : true;
   }
 
 }
