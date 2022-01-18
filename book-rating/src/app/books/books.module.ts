@@ -20,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     BooksRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // HttpClientModule // AHHHH!!! NIEMALS!
   ]
 })
 export class BooksModule { }
