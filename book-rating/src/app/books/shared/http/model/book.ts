@@ -35,7 +35,7 @@ export interface Book {
     /**
      * Rating of the book as stars, from one star (bad) to five stars (great)
      */
-    rating?: number;
+    rating: number;
     /**
      * date-time as defined by RFC3339 (http://www.ietf.org/rfc/rfc3339.txt) - like new Date().toISOString();
      */
@@ -43,7 +43,7 @@ export interface Book {
     /**
      * Short description of the book
      */
-    description?: string;
+    description: string;
     /**
      * Images of the book, which are used as thumbnails
      */
