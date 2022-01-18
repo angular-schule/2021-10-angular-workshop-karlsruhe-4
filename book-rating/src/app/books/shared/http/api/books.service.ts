@@ -18,14 +18,10 @@ import { HttpClient, HttpHeaders, HttpParams,
 import { CustomHttpParameterCodec }                          from '../encoder';
 import { Observable }                                        from 'rxjs';
 
-// @ts-ignore
-import { Book } from '../model/book';
-// @ts-ignore
-import { Rating } from '../model/rating';
-// @ts-ignore
-import { RestError } from '../model/restError';
+import { Book } from '../model/models';
+import { Rating } from '../model/models';
+import { RestError } from '../model/models';
 
-// @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
 
@@ -127,7 +123,6 @@ export class BooksService {
         }
 
         return this.httpClient.delete<any>(`${this.configuration.basePath}/books`,
-            null,
             {
                 context: localVarHttpContext,
                 responseType: <any>responseType_,
@@ -277,7 +272,6 @@ export class BooksService {
         }
 
         return this.httpClient.delete<any>(`${this.configuration.basePath}/books/${encodeURIComponent(String(isbn))}`,
-            null,
             {
                 context: localVarHttpContext,
                 responseType: <any>responseType_,

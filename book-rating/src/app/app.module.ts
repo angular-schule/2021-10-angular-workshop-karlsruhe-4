@@ -7,6 +7,7 @@ import { BooksModule } from './books/books.module';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 // import { BookComponent } from './books/book/book.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ApiModule, Configuration } from './books/shared/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BooksModule,
-    HttpClientModule
+    HttpClientModule,
+    ApiModule.forRoot(() => new Configuration({
+      basePath: 'https://api.angular.schule'
+      }))
   ],
   providers: [],
   bootstrap: [AppComponent]
