@@ -11,7 +11,7 @@ In diesem Repository findest du alle Infos zur Vorbereitung und während des Wor
 
 Du kannst dir entweder  
 * dieses Repository per Git herunterladen und in den Ordner `rxjs-playground` wechseln<br>**oder**<br>  
-* den Code als ZIP-Datei herunterladen: [rxjs-playground.zip](https://github.com/angular-schule/2022-01-angular-workshop-karlsruhe-9/files/7886863/rxjs-playground.zip)
+* den Code als ZIP-Datei herunterladen: [rxjs-playground.zip](https://github.com/angular-schule/2022-01-angular-workshop-karlsruhe-9/files/7887044/rxjs-playground.zip)
 
 ```bash
 cd rxjs-playground
