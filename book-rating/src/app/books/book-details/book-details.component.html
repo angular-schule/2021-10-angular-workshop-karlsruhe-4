@@ -1,6 +1,10 @@
+<ng-container *ngIf="book$ | async as book">
 
+  <h1>{{ book.title }}</h1>
 
-<p>{{ book$ | async | json }}</p>
+  <p>{{ book.description }}</p>
+
+</ng-container>
 
 
 <a routerLink="/books/9783864907791">Gehe zu Angular</a><br>
