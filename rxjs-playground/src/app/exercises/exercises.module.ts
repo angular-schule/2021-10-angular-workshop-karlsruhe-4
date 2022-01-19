@@ -41,7 +41,7 @@ const routes: Routes = [
     HistoryComponent,
     HigherorderComponent,
     GameScoreComponent,
-    ErrorHandlingComponent,
+    // ErrorHandlingComponent,
     ChatComponent,
     ChatWindowComponent,
     UnsubscribeComponent,
