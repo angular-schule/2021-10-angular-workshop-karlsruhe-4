@@ -7,6 +7,7 @@ import { fromEvent, map, startWith, debounceTime } from 'rxjs';
 })
 export class FromeventComponent {
 
+  test = true;
   currentWidth = 0;
 
   constructor() {
@@ -21,7 +22,13 @@ export class FromeventComponent {
 
     /******************************/
 
-    
+    fromEvent(window, 'resize').pipe(
+      map(x => (x.target as Window).innerWidth),
+      debounceTime(2000),
+      startWith(window.innerWidth),
+    ).subscribe(x => this.currentWidth = x)
+
+
     /******************************/
   }
 
