@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
-import { Subject, ReplaySubject, timer, Subscription, takeWhile, takeUntil, take } from 'rxjs';
+import { Subject, ReplaySubject, timer, Subscription, takeWhile, takeUntil, take, tap } from 'rxjs';
 
 @Component({
   selector: 'rxw-unsubscribe',
@@ -8,5 +8,7 @@ import { Subject, ReplaySubject, timer, Subscription, takeWhile, takeUntil, take
 })
 export class UnsubscribeComponent  {
 
-    zahl$ = timer(0, 1000).pipe();
+    zahl$ = timer(0, 1000).pipe(
+      tap(x => console.log(x))
+    );
 }
